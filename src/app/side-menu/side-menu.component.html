@@ -1,0 +1,60 @@
+<div class="side-menu">
+    <div class="profile">
+        <mat-icon 
+            style="color: #ffffff;position: absolute;left: 10px;top: 10px;cursor: pointer;"
+            (click)="redirect('')"
+            >home
+        </mat-icon>
+        <div class="for-img-profile">
+            <img style="width: 100%;height: 100%;border-radius: 50%;" src="{{user.pic}}" alt="">
+        </div>
+        <div class="profile-details">
+            <p>Username: {{user.username}} <br>ID number: {{user.JMBG}} </p>
+        </div>
+    </div>
+    <div class="menu-list">
+        <ul class="menu-list-ul">
+            <li class="timer">
+                <p>Elections open in:<br/>{{demo}}</p>
+                <button type="submit" disabled>VOTE</button>
+            </li>
+            <li 
+                class="menu-list-li" 
+                (click)="redirect('documents')"
+                >Documents
+            </li>
+            <li 
+                class="menu-list-li" 
+                (click)="redirect('documents-order')"
+                >Documents Order
+            </li>
+            <li 
+                class="menu-list-li" 
+                (click)="redirect('digital-signature')"
+                >Digital Signature
+            </li>
+            <li 
+                class="menu-list-li" 
+                (click)="redirect('get-visa')"
+                >Get Visa
+            </li>
+            <li 
+                class="menu-list-li" 
+                (click)="redirect('documents-certification')"
+                >Documents Certification
+            </li>
+            <li 
+            class="menu-list-li"
+             (click)="redirect('profile-details')"
+             >Profile Details
+            </li>
+        </ul>
+    </div>
+    <div class="log-out-div">
+        <button 
+            class="log-out"
+            routerLink="/log-in"
+            (click)="removeStorage()" 
+            >Log out</button>
+    </div>
+</div>

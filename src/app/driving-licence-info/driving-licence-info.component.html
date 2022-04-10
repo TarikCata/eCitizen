@@ -1,0 +1,152 @@
+<app-side-menu></app-side-menu>
+<div class="driving-licence-div">
+    <div class="card-heading">
+        DRIVING LICENCE
+    </div>
+    <div class="qr-code">
+        <P>SHOW QR CODE FOR DRIVING LICENCE</P>
+        <button (click)="redirect('driving-licence')">SHOW</button>
+    </div>
+    <div class="driving-licence-info">
+        <div class="driving-licence-main-wrapper">
+            <div class="driving-licence-photo">
+                <img src="{{user.pic}}" style="width: 100%;height: 100%;" alt="">
+                <p>{{user.infoDeteailsNum}}</p>
+            </div>
+            <div class="driving-licence-info-form-div">
+                <form action="" class="driving-licence-info-form">
+                    <div class="first-part">
+                        <label>Name:</label>
+                        <input type="text" name="name" value="{{user.name}}" disabled>
+                        <label>Surname:</label>
+                        <input type="text" value="{{user.surname}}" name="surname" disabled>
+                        <label>Gender:</label>
+                        <input type="text" value="{{user.gender}}" name="gender" disabled>
+                        <label>Date of birth:</label>
+                        <input type="text" value="{{user.dateOfBirth}}" name="date-of-birth" disabled>
+                        <label>Expiry date:</label>
+                        <input type="text" value="{{user.expiryDate}}" name="expiry-date" disabled>
+                        <label>Country:</label>
+                        <input type="text" value="{{user.country}}" name="country" disabled>
+                    </div>
+                    <div class="second-part">
+                        <label>Signature:</label>
+                        <input type="text" value="{{user.signature}}" name="signature" disabled>
+                        <label>Place of birth:</label>
+                        <input type="text" value="{{user.placeOfBirth}}" name="place-of-birth" disabled>
+                        <label>Municipality of residence:</label>
+                        <input type="text" value="{{user.munOfResidence}}" name="municipality" disabled>
+                        <label>Issuing authority:</label>
+                        <input type="text" value="{{user.issuingAuthority}}" name="issuing-authority" disabled>
+                        <label>Personal id number:</label>
+                        <input type="text" value="{{user.JMBG}}" name="personal-id-number" disabled>
+                        <label>Date of issue:</label>
+                        <input type="text" value="{{user.dateOfIssue}}" name="date=of-issue" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="drive-capability-wrapper">
+        <div class="allowed-table">
+            <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Date issued</th>
+                    <th>Expiry Date</th>
+                    <th>Proscription</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>B1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>C1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>D1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>BE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>C1E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>CE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>D1E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+    <div class="traffic-violations">
+        <div class="traffic-violations-heading">TRAFFIC VIOLATIONS</div>
+        <div class="traffic-violations-content"></div>
+    </div>
+    <div class="notes">
+        <div class="notes-heading">NOTES</div>
+        <div class="notes-content"></div>
+    </div>
+</div>

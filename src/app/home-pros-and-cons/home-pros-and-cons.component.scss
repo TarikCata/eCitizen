@@ -1,0 +1,100 @@
+.feature{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, transparent 0%, transparent 26%,rgba(67,0,125, 0.22) 26%, 
+    rgba(67,0,125, 0.22) 56%,transparent 56%, transparent 100%),
+    linear-gradient(45deg, transparent 0%, transparent 36%,rgba(67,0,125, 0.22) 36%,
+     rgba(67,0,125, 0.22) 71%,transparent 71%, transparent 100%),
+     linear-gradient(45deg, transparent 0%, transparent 31%,rgba(67,0,125, 0.22) 31%, 
+     rgba(67,0,125, 0.22) 56%,transparent 56%, transparent 100%)
+     ,linear-gradient(270deg, rgb(255,255,255),rgb(255,255,255));
+     padding-top: 100px;
+
+
+
+
+
+}
+h1{
+    text-align: center;
+    
+}
+
+.opisi{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 90%;
+    
+   
+    
+}
+.card-1 span{
+    padding-top: 60px;
+}
+p{
+    color: white;
+}
+.card-1,.card-2,.card-3{
+    width: 500px;
+    height: 200px;
+    color: white;
+    box-shadow: 10px 10px 10px rgb(0, 20, 21);
+    text-align: center;
+    padding-top: 9%;
+
+
+}
+
+.card-1{
+    
+    background:rgba(0, 0, 0, 0.8) url(https://miro.medium.com/max/505/1*g3TS7hk2zqpKGOZIPSZK5g.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+.card-2{
+     background:rgba(0, 0, 0, 0.7) url(https://riverplacecapital.com/wp-content/uploads/2020/12/money-flowing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.card-3{
+      background:rgba(0, 0, 0, 0.7) url(https://isigmaonline.org/wp-content/uploads/2019/11/electronic-voting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.treci{
+   
+    left: 0px;
+    bottom: 0px;
+    margin-left: -10%;
+    margin-top: 30%;
+}
+.prvi{
+    margin-left: 25%;
+    margin-top: 5%;
+    
+}
+.drugi{
+    padding-top: 25%;
+    margin-top: 40%;
+    margin-left: -30%;
+}
+.Naslov{
+    width: 400px;
+    font-size: larger;
+    margin-left: 9%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 5px;
+    text-align: center;
+    background: linear-gradient(120deg,#081d2c,#2f163a);
+
+}

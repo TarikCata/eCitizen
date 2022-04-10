@@ -1,0 +1,62 @@
+<app-side-menu></app-side-menu>
+<div class="health-info-div">
+    <div class="card-heading">
+        HEALTH CARD
+    </div>
+    <div class="qr-code">
+        <P>SHOW QR CODE FOR HEALTH CARD</P>
+        <button (click)="redirect('healt-card')">SHOW</button>
+    </div>
+    <div class="health-info-info">
+        <div class="health-info-main-wrapper">
+            <div class="health-info-photo">
+                <img src="{{user.pic}}" style="width: 100%;height: 100%;" alt="">
+                <p>{{user.infoDeteailsNum}}</p>
+            </div>
+            <div class="health-info-info-form-div">
+                <form action="" class="health-info-info-form">
+                    <div class="first-part">
+                        <label>Name:</label>
+                        <input type="text" name="name" value="{{user.name}}" disabled>
+                        <label>Surname:</label>
+                        <input type="text" value="{{user.surname}}" name="surname" disabled>
+                        <label>Gender:</label>
+                        <input type="text" value="{{user.gender}}" name="gender" disabled>
+                        <label>Date of birth:</label>
+                        <input type="text" value="{{user.dateOfBirth}}" name="date-of-birth" disabled>
+                        <label>Expiry date:</label>
+                        <input type="text" value="{{user.expiryDate}}" name="expiry-date" disabled>
+                        <label>Country:</label>
+                        <input type="text" value="{{user.country}}" name="country" disabled>
+                    </div>
+                    <div class="second-part">
+                        <label>Signature:</label>
+                        <input type="text" value="{{user.signature}}" name="signature" disabled>
+                        <label>Place of birth:</label>
+                        <input type="text" value="{{user.placeOfBirth}}" name="place-of-birth" disabled>
+                        <label>Municipality of residence:</label>
+                        <input type="text" value="{{user.munOfResidence}}" name="municipality" disabled>
+                        <label>Issuing authority:</label>
+                        <input type="text" value="{{user.issuingAuthority}}" name="issuing-authority" disabled>
+                        <label>Personal id number:</label>
+                        <input type="text" value="{{user.JMBG}}" name="personal-id-number" disabled>
+                        <label>Date of issue:</label>
+                        <input type="text" value="{{user.dateOfIssue}}" name="date=of-issue" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="vaccinations">
+        <div class="vaccinations-heading">VACCINATIONS</div>
+        <div class="vaccinations-content"></div>
+    </div>
+    <div class="doctor-visits">
+        <div class="doctor-visits-heading">DOCTOR VISITS</div>
+        <div class="doctor-visits-content"></div>
+    </div>
+    <div class="notes">
+        <div class="notes-heading">NOTES</div>
+        <div class="notes-content"></div>
+    </div>
+</div>

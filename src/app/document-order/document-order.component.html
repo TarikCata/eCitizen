@@ -1,0 +1,48 @@
+<div class="wrapper">
+    <app-side-menu></app-side-menu>
+
+
+
+    <div class="document-order-container">
+        <div class="order-title">
+            <p style="font-size: 1.8rem;">Documents Order</p>
+
+            
+            <div class="kosarica">
+                 <div 
+                 class="counter"
+                 style="width: 20px;  background: linear-gradient(120deg,#2980b9,#8e44ad);
+                ;color: white;border-radius: 50%;text-align: center;"
+                 >
+                  {{naruceneKartice.length}}  
+                 </div>
+                <mat-icon class="ikonica"
+                style="font-size: 2.2rem;cursor: pointer;margin-right: 8px;margin-bottom: 8px;"
+                (click)="seeDetails()"
+                >
+                 shopping_cart
+                 </mat-icon>
+                
+            </div>
+            </div>
+        <div class="order-content">
+            <div 
+            *ngFor="let n of kartice" 
+            class="order-card"
+            >
+                <div class="title">
+                    <p style="font-size: 1.2rem;">{{n.naziv}}</p>
+                </div>
+                <div class="btn-order">
+                    <button 
+                    class="order-btn"
+                    (click)="ordered(n)"
+                    (click)="count()" 
+                    >
+                        Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+</div>

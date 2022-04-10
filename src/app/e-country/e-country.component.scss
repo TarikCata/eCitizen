@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-image: repeating-linear-gradient(112.5deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),repeating-linear-gradient(0deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),linear-gradient(135deg, rgb(238, 238, 238),rgb(121, 121, 121));
+}
+.content {
+    margin-left: 18%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title,
+#description {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(120deg,#0b263a,#8e44ad);
+    //-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color-animation 2.5s ease-out infinite;
+    font-weight: bolder;
+}
+
+@keyframes color-animation {
+    0%    {background: linear-gradient(120deg,#0b263a,#8e44ad);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    32%   {background: linear-gradient(120deg,#174a70,#b300ff);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    33%   {background: linear-gradient(120deg,#2b6897,#ebbdff);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    65%   {background: linear-gradient(120deg,#7caace,#5f4e66);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    66%   {background: linear-gradient(120deg,#162c3d,#c3a1d1);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    99%   {background: linear-gradient(120deg,#143752,#a037ce);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    100%  {background: linear-gradient(120deg,#0b263a,#8e44ad);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+  }
+
+#title {
+    font-size: 7rem;
+}
+#description {
+    font-size: 5.5rem;
+}

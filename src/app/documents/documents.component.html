@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <app-side-menu></app-side-menu>
+    <div class="content">
+        <div class="wrapper-cards">
+            <div class="row-cards">
+                <div 
+                    class="card" 
+                    (click)="redirectDocuments('driving-licence')"                
+                >DRIVING LICENCE
+                </div>
+                <div 
+                    class="card" 
+                    (click)="redirectDocuments('health-card')"
+                >HEALTH CARD</div>
+            </div>
+            <div class="row-cards">
+                <div 
+                    class="card"
+                    (click)="redirectDocuments('id-card')"
+                 >ID CARD</div>
+                <div 
+                    class="card"
+                    (click)="redirectDocuments('passport')"
+                 >PASSPORT</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<nav class="navbar">
+        <div class="nav-icon">
+            <i class="icon" (click)="toAbout()">eCitizen</i>
+        </div>
+        <div class="home-navbar-item">
+            <ul class="home-navbar-ul">
+                <li 
+                    #about 
+                    id="about" 
+                    class="menu-li"
+                    (click)="toAbout()"
+                    >About project
+                </li>
+                <li 
+                    #help
+                    id="help" 
+                    class="menu-li" 
+                    (click)="toHowItHelps()"
+                    >How it helps
+                </li>
+                <li 
+                    #pros
+                    id="pros" 
+                    class="menu-li" 
+                    (click)="toProsAndCons()"
+                   >Features
+                </li>
+                <li 
+                    #team 
+                    id="teamId" 
+                    class="menu-li" 
+                    (click)="toTeam()"
+                   >Team
+                </li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            <button class="btn-sign-up" routerLink="/log-in">Sign in</button>
+        </div>
+</nav>

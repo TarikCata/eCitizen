@@ -1,0 +1,91 @@
+.health-info-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 18%;
+    font-family: Apple Chancery, cursive;
+}
+.card-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(120deg,#0b263a,#8e44ad);
+    width: 100%;
+    color:white;
+}
+img{
+    border: 3px solid white;
+}
+.qr-code {
+    width: 300px;
+    box-shadow: 15px 15px 10px black;
+    background-image: repeating-linear-gradient(112.5deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),repeating-linear-gradient(0deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),linear-gradient(135deg, rgb(238, 238, 238),rgb(121, 121, 121));;
+    margin-top: 3%;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    button {
+        background-color: #abcbff;
+        border-radius: 20px;
+        margin-bottom: 2%;
+    }
+}
+.health-info-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: repeating-linear-gradient(112.5deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),repeating-linear-gradient(0deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),linear-gradient(135deg, rgb(238, 238, 238),rgb(121, 121, 121));;
+    border-radius: 25px;
+    margin-top: 3%;
+    border: 2px solid gray;
+
+}
+.health-info-main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.health-info-info-form {
+    display: flex;
+    flex-direction: row;
+}
+.health-info-photo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 300px;
+    height: 400px;
+    gap: 10px;
+}
+.first-part {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 300px;
+}
+.second-part {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 300px;
+}
+.notes, .vaccinations, .doctor-visits {
+    margin-top: 20px;
+    width: 900px;
+    height: auto;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+    border-radius: 25px;
+    color: white;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

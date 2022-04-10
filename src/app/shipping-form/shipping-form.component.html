@@ -1,0 +1,54 @@
+<app-side-menu></app-side-menu>
+<div class="shipping-order-div" id="shipping">
+    <div class="container">
+        <div class="container-orders">
+            <div class="order-content" *ngFor="let i of kartice;let ind = index">
+                <div class="order-title">
+                    <p style="margin-left:10px">{{i.naziv}}</p>
+                </div>
+                <div class="order-content-">
+                    <div class="order-content-card">
+
+                        <button class="btn-remove" (click)="remove(i)">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Prices">
+            <form action="podaci">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" disabled value="{{user.name}}"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" disabled value="{{user.surname}}"><br>
+                <label for="fname">Address:</label><br>
+                <input type="text" id="fname" name="fname" disabled value="{{user.addres}}"><br>
+                <label for="fname">Town:</label><br>
+                <input type="text" id="fname" name="fname" disabled value="{{user.placeOfBirth}}"><br>
+                <label for="fname">Purpose:</label><br>
+                <textarea style="height: 80px;width: 100%;" [(ngModel)]="purpose" id="purpose" name="purpose" rows="4"
+                    cols="50"></textarea><br>
+            </form>
+
+            <h1 style="font-size: 1.3rem;">{{cijena | currency: 'USD'}} </h1>
+        </div>
+        <div class="submit-button">
+            <button class="submit" (click)="turn()">Submit</button>
+        </div>
+
+        <div *ngIf="ukljucen" class="alert-div">
+            <p style="font-size: 1.5rem;">{{errPoruka}}</p>
+            <button (click)="iskljuci()">Cancel
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="print-div" id="print" style="display: none;">
+    <div class="print-content">
+        <p style="font-size: 1-9rem;text-align: center;">Ordered Documents</p>
+        <p>Izdaje se u svrhu: {{purpose}}</p> <br />
+        <p>{{writeDocuments()}}</p>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+.container{
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+    background-image: repeating-linear-gradient(112.5deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),repeating-linear-gradient(0deg, hsla(19,0%,93%,0.2) 0px, hsla(19,0%,93%,0.2) 0px,transparent 0px, transparent 1px,hsla(19,0%,93%,0.2) 1px, hsla(19,0%,93%,0.2) 4px,transparent 4px, transparent 5px,hsla(19,0%,93%,0.2) 5px, hsla(19,0%,93%,0.2) 8px),linear-gradient(135deg, rgb(238, 238, 238),rgb(121, 121, 121));;
+    box-shadow: 20px 20px 20px black;
+    border: 2px solid gray;
+    margin-left: 29%;
+    position: absolute;
+    margin-top: 50px;
+    display: flex;
+    
+    
+}
+h1{
+    padding-top: 15px;
+    color: yellow;
+}
+.order-content{
+   border: 1px solid black;
+   border-radius: 20px;
+   margin-top: 9px;
+   height: 39px;
+   width: 100%;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+       background: linear-gradient(120deg,#03111a,#612b78);
+
+}
+p{
+    padding: 5px;
+}
+
+.container-orders{
+    width: 70%;
+    height: 90%;
+    margin: 15px;
+    
+   
+}
+.btn-remove{
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 4px;
+    border: 3px solid black;
+    color: red;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 14px;
+    
+    
+}
+.submit{
+    color: rgb(6, 55, 6);
+    font-weight: 700;
+    
+}
+.Prices{
+    padding: 3%;
+    height: 80%;
+    width: 40%;
+    margin-top: 3%;
+    border: 2px solid white;
+    background: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+    color: white;
+    border-radius: 30px;
+    
+}
+form {
+    input, label {
+        width: 100%;
+    }
+}
+.submit{
+   position: absolute;
+   bottom: 30px;
+   width: 150px;
+   right: 90px;
+   border-radius: 30px;
+   border: 2px solid gray;
+}
+.alert-div{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #03111a;
+    box-shadow: 20px 20px 20px black;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 30%;
+    border: 3px solid black;
+    opacity: 90;
+    
+    button {
+        border-radius: 25px;
+        width: 100px;
+    }
+
+    p{
+        color: green;
+    }
+}

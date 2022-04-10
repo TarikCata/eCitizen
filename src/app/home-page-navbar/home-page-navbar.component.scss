@@ -1,0 +1,61 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg,#081d2c,#8e44ad);
+  color: white;
+  z-index: 1;
+  
+
+
+}
+
+.nav-icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.icon {
+  cursor: pointer;
+}
+.home-navbar-item {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  
+}
+.menu-btn {
+  width: 20%;
+}
+.home-navbar-ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 60px;
+  font-size: 0.94rem;
+  cursor: pointer;
+   
+
+}
+.btn-sign-up {
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.4s all ease-in-out;
+}
+.btn-sign-up:hover{
+  cursor: pointer;
+  background-color:rgba(0, 0, 0, 0.421);
+  color: white;
+  border: 2px solid rgb(71, 174, 208);
+  transition: 0.2s all ease-in-out;
+
+}

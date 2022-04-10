@@ -1,0 +1,89 @@
+.log-in-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(120deg,#081d2c,#8e44ad);
+  
+  
+}
+ins{
+    transition: transform .5s;
+
+}
+ins:hover{
+color: red;
+    transform: scale(1.2);
+
+}
+
+.log-in-div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  
+  margin-top: -150px;
+  background-color: white;
+  border-radius: 10px;
+}
+.form-log-in-div {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-log-in {
+  display: flex;
+  flex-direction: column;
+}
+.input-wrap {
+  width: 100%;
+  border: 2px solid rgb(99, 97, 97);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-wrap svg{
+  height: 20px;
+  margin:3px 3px 2px;
+  color: red;
+}
+.log-in-input {
+   margin: 0 8px;
+  width: 100%;
+  border: none;
+}
+.log-in-input:focus {
+  border: none;
+  outline: none;
+}
+.btn-log-in-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.btn-log-in {
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #2691d9;
+  color: #e9f4fb;
+  border-radius: 20px;
+  
+  
+}
+.btn-log-in:hover{
+  background: linear-gradient(120deg,#2980b9,#612b78);
+  
+  
+}
+
